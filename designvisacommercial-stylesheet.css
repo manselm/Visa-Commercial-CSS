@@ -1116,6 +1116,13 @@ input#txtCardNumber::-webkit-inner-spin-button {
 	background: url(|IMAGESRC|/bkg_merchant.gif) 315px -20px no-repeat;
 	cursor: pointer;
 }
+.accordion_article_id.long_text {
+	height:62px;
+	line-height:62px;	
+}
+.accordion_article_id.long_text h3 {
+	padding: 15px 75px 0 38px;
+}
 .accordion_article_id h3 {
 	padding: 15px 0 0 38px;
 	font: lighter 14px/16px myriadlight, arial, sans-serif;
@@ -1129,6 +1136,11 @@ input#txtCardNumber::-webkit-inner-spin-button {
 	padding: 15px 70px 20px 38px;
 	font: lighter 14px/14px myriadlight, arial, sans-serif;
 	color: #75787b;
+}
+.accordion_article_content ol {
+	list-style:decimal;
+	padding: 15px 70px 20px 57px;
+	font: lighter 14px/14px myriadlight, arial, sans-serif;
 }
 .how_faqs .accordion_article_content p a {
 	font: bolder 12px/14px myriadbold, arial, sans-serif;
@@ -2661,7 +2673,7 @@ p.merchantOfferDesc {
 	width: 100%;
 	height: 60px;
 	padding: 10px 0;
-	display: none;
+	display: block;
 	border: none;
 	border-bottom: 2px solid #dedddd;
 	cursor: pointer;
@@ -2703,6 +2715,13 @@ p.merchantOfferDesc {
 	background: #ffffff;
 	border-bottom: 2px solid #dedddd;
 }
+.offer a.merchantLink {
+	max-width:275px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;	
+}
+
 .merchantEnrollNow {
 	width: 140px;
 	height: 30px;
@@ -3034,19 +3053,23 @@ p.merchantOfferDesc {
 }
 .accordion_article_id {
 	display: none;
-	height: 40px;
+	height: auto !important;
 	line-height: 40px;
 	text-align: left;
 	border-bottom: 1px solid #dedddd;
 	background: url(|IMAGESRC|/bkg_merchant.gif) 0px -20px no-repeat;
 	cursor: pointer;
 }
+.accordion_article_id.long_text {
+	height:52px;
+	line-height:52px;	
+}
 .accordion_article_id h3 {
 	width: 270px;
 	display: inline-block;
 	vertical-align: middle;
 	line-height: normal;
-	padding: 0 0 0 10px;
+	padding: 0 0 0 10px !important;
 	font: lighter 13px/15px myriadlight, arial, sans-serif;
 	color: #1a1f71;
 }
@@ -3054,7 +3077,8 @@ p.merchantOfferDesc {
 	display: none;
 	border-bottom: 1px solid #dedddd;
 }
-.accordion_article_content p {
+.accordion_article_content p,
+.accordion_article_content ol {
 	padding: 15px 10px 20px 10px;
 	font: lighter 12px/14px myriadlight, arial, sans-serif;
 	color: #75787b;
