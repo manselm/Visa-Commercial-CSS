@@ -167,6 +167,12 @@ div.global_search button.nav-search {
 	padding: 0px;
 	cursor: pointer;
 }
+div.global_search .language_toggle {
+	padding:0px 0px 0px 40px;
+	background:url(|IMAGESRC|/canada_icon.png) top left no-repeat;
+	float:right;
+	margin-top:15px;	
+}
 .global_search_icon {
 	display: none;
 }
@@ -571,7 +577,7 @@ p.dis_calculator {
 }
 .dis_merchant_sortby label {
 	float: left;
-	width: 45px;
+	width: 52px;
 	padding: 0px 10px 0 400px;
 	font: lighter 14px/18px myriadlight, arial, sans-serif;
 	color: #1a1f71;
